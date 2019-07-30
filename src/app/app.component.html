@@ -1,14 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+<app-menu title="mon app" theme="dark" >
+
+</app-menu>
 <div style="text-align:center" class="container">
+
+
     <h1>
       Welcome to {{ title }}!
     </h1>
-  <div *ngIf="selectedPizza">
-    <h2> {{ selectedPizza.name }} </h2>
-    <p> {{ selectedPizza.price }}  </p>
-    <label >name</label>
-    <input [(ngModel)]="selectedPizza.name" placeholder="name">
-  </div>
+  
+  <app-pizza [selectedPizza]="selectedPizza">
+
+  </app-pizza>
 
   <div class="pizzas row">
 

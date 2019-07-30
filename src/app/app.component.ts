@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
+import { Pizza } from   './model/pizza.model';  
 
-export class Pizza {
- 
-  id : number;
-  name: string;
-  price:number;
-  image:string;
-}
 
 const PIZZAS : Pizza[] = [
   { id: 1, name: 'Reine', price: 12,image : "p1.jpg" },
@@ -14,6 +8,7 @@ const PIZZAS : Pizza[] = [
   { id: 3, name: 'Orientale', price: 11, image : "p3.jpg"},
   { id: 4, name: 'Cannibale', price: 9, image : "p4.jpg" }
 ];
+
 
 
 @Component({
@@ -33,4 +28,10 @@ export class AppComponent {
     //de AppComponent
     this.selectedPizza=pizza;
   }
+
+  
+  
+
+
+
 }
