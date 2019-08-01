@@ -1,0 +1,25 @@
+<div *ngFor="let pizza of pizzas">
+        <a [routerLink]="['/pizzas', pizza.id]">{{pizza.name}}</a>
+ </div>
+
+    <!-- <div class="pizzas row">
+
+      
+ 
+            <div class="col-lg-3"  *ngFor="let pizza of pizzas" (click)="onSelect(pizza)"> 
+                <div class="card">
+                    <img class="card-img-top" [src]="'assets/images/'+pizza.image" >
+      
+                  <div class="card-body">
+                    <h2 class="card-title">{{pizza.name}}</h2>
+                    <p>prix : {{pizza.price}} &euro;</p>
+                    
+                    <a href="#" class="btn btn-primary">ajouter</a>
+                  </div>
+                </div>
+                  
+              
+            </div>
+            
+      
+      </div> -->
